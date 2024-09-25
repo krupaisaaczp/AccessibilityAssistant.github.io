@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../HeartBeat_Monitoring/heartbeat.jpg");
+    background-size: cover; /* Change from cover to contain */
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure it doesn't repeat */
+    font-family: 'Arial', sans-serif;
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: none;
+    z-index: 3;
+}
+
+.popup button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
+.tips {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d9534f; /* Red for health tips */
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+#submittedReports {
+    margin-top: 10px;
+    text-align: left;
+}

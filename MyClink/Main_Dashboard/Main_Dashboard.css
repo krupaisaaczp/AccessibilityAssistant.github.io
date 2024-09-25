@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('Main_Dashboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Make title text stand out */
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.controls button {
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent for better contrast */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: rgba(0, 86, 179, 0.9);
+    transform: translateY(-3px);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 icons per row */
+    gap: 40px 40px; /* Adjusted gap: 20px between columns, 40px between rows */
+    padding: 20px 50px;
+    margin: auto;
+}
+
+.icon {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Ensures responsive size */
+    aspect-ratio: 1 / 1; /* This ensures the icon box remains square */
+    max-width: 200px; /* Optional: Limits the maximum width */
+}
+
+.icon img {
+    width: 100%;
+    height: 100%; /* Make sure the image covers the entire square */
+    object-fit: cover; /* Ensures the image covers the square without distortion */
+    border-radius: 10px;
+}
+
+.icon p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.high-contrast {
+    background-color: black;
+    color: yellow;
+}
+
+.high-contrast .icon {
+    background-color: #222;
+}
+
+.high-contrast .icon p {
+    color: yellow;
+}
+
+.high-contrast img {
+    filter: invert(1);
+}
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr); /* 2 icons per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        grid-template-columns: 1fr; /* 1 icon per row for mobile screens */
+    }
+}

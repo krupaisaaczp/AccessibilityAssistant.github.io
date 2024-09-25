@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Dashboard</title>
+    <link rel="stylesheet" href="Main_Dashboard.css">
+    <script src="Main_Dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ACCESSIBILITY ASSISTANT</h1>
+        <div class="controls">
+            <button id="increase-font" aria-label="Increase Font Size">A+</button>
+            <button id="decrease-font" aria-label="Decrease Font Size">A-</button>
+            <button id="toggle-contrast" aria-label="Toggle High Contrast Mode">High Contrast</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="icon" id="voice-command" tabindex="0" role="button" aria-label="Voice Input/Command">
+                <a href="../Voice_Assistant/voice_assistant.html">
+                    <img src="../Main_Dashboard/voice_assistant.jpeg" alt="Voice Input/Command">
+                </a>
+                <p>Voice Input/Command</p>
+            </div>
+            <div class="icon" id="health-monitoring" tabindex="0" role="button" aria-label="Health Monitoring">
+                <a href="../Health_Monitoring/HM_Dashboard/HM_dashboard.html">
+                    <img src="health_monitoring.jpeg" alt="Health Monitoring">
+                </a>
+                <p>Health Monitoring</p>
+            </div>
+            <div class="icon" id="medicine-schedule" tabindex="0" role="button" aria-label="Medicine Schedule">
+                <a href="medicine_schedule.html">
+                    <img src="medicine_schedule.jpeg" alt="Medicine Schedule">
+                </a>
+                <p>Medicine Schedule</p>
+            </div>
+            <div class="icon" id="emergency-contact" tabindex="0" role="button" aria-label="Emergency Contact">
+                <a href="emergency_contact.html">
+                    <img src="emergency_contact.png" alt="Emergency Contact">
+                </a>
+                <p>Emergency Contact</p>
+            </div>
+            <div class="icon" id="guardian-connection" tabindex="0" role="button" aria-label="Guardian Connection">
+                <a href="guardian_connection.html">
+                    <img src="guardian.jpg" alt="Guardian Connection">
+                </a>
+                <p>Guardian Connection</p>
+            </div>
+            <div class="icon" id="stress-relief-games" tabindex="0" role="button" aria-label="Stress Relief Games">
+                <a href="stress_relief.html">
+                    <img src="stress_relief.jpeg" alt="Stress Relief Games">
+                </a>
+                <p>Stress Relief Games</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed to assist elderly people with health and daily tasks.</p>
+    </footer>
+</body>
+</html>

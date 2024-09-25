@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Rate Monitor</title>
+    <link rel="stylesheet" href="HB_Monitoring.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Heart Rate Monitor</h1>
+    <button id="connect-btn">Connect to Heart Rate Sensor</button>
+    <p id="heartRate">Heart Rate: -- bpm</p>
+    <p id="lastHeartRate">Last Recorded: -- bpm</p>
+    <div id="healthTips" class="tips"></div>
+    <canvas id="heartRateChart" width="300" height="150"></canvas>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Connect to Heart Rate Monitor</h2>
+            <p>Do you want to connect to the heart rate sensor?</p>
+            <button id="connect-btn">Connect</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+    
+
+    <!-- Form for Health Reports -->
+    <div class="form-container">
+        <h2>Health Report</h2>
+        <form id="healthReportForm">
+            <input type="text" id="report" placeholder="Enter your health report" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="submittedReports"></div>
+    </div>
+</div>
+
+
+<!-- Pop-up Notification -->
+<div class="popup" id="popup">
+    <p>Connecting to heart rate sensor...</p>
+    <button id="cancel-btn">Cancel</button>
+</div>
+
+<script src="HB_Monitoring.js" defer></script>
+</body>
+</html>

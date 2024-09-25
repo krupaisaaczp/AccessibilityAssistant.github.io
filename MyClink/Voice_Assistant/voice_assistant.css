@@ -1,0 +1,158 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    background-image: url("voice_assistant.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for Content */
+.container {
+    background-color: rgba(255, 255, 255, 0.7); /* White background with 70% opacity */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+
+/* Voice Button Styling */
+#voice-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#voice-btn:hover {
+    background-color: #45a049;
+}
+
+/* Indicator for Mic */
+#mic-indicator {
+    display: block;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    visibility: hidden;
+}
+
+/* Output Text Styling */
+#output {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Response Text Styling */
+#response {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Settings Panel Styling */
+#settings-panel {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    display: none;
+}
+
+.settings-btn {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.settings-btn:hover {
+    color: #4CAF50;
+}
+
+/* Input Field Styling */
+input[type="text"], input[type="password"] {
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Large Text for Accessibility */
+.large-text {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Toggle Button */
+.toggle-button {
+    appearance: none;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:checked {
+    background-color: #4CAF50;
+}
+
+.toggle-button:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.3s;
+}
+
+.toggle-button:checked:before {
+    transform: translateX(26px);
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 600px) {
+    #voice-btn {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    #output, #response {
+        font-size: 20px;
+    }
+}

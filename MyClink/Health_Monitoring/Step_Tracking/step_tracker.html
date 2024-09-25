@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Step Tracker</title>
+    <link rel="stylesheet" href="step_tracker.css">
+    <script defer src="step_tracker.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Step Tracker</h1>
+        <div class="tracker-display">
+            <div class="info-box">
+                <h2>Steps</h2>
+                <p id="step-count">0</p>
+            </div>
+            <div class="info-box">
+                <h2>Distance (km)</h2>
+                <p id="distance-traveled">0.00</p>
+            </div>
+            <div class="info-box">
+                <h2>Speed (km/h)</h2>
+                <p id="speed">0.00</p>
+            </div>
+            <div class="info-box">
+                <h2>Calories Burned</h2>
+                <p id="calories">0</p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start Tracking</button>
+            <button id="stop-btn" disabled>Stop Tracking</button>
+        </div>
+
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <h2>Tracking Active</h2>
+                <p>Your steps are being counted...</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

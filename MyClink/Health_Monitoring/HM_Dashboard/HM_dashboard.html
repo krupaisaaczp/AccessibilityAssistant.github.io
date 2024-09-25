@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dashboard</title>
+    <link rel="stylesheet" href="HM_dashboard.css">
+</head>
+<body>
+    <h1>Medical Services</h1>
+
+    <div class="dashboard">
+        <div class="dashboard-item" onclick="navigateTo('../Virtual_Consultation/virtual_consultation.html')">
+            <img src="../HM_Dashboard/virtual_consultation.jpg" alt="Virtual Consultations Icon">
+            <p>Virtual Consultation</p>
+        </div>
+        <div class="dashboard-item" onclick="navigateTo('../Medical_Reports/medical_reports.html')">
+            <img src="../HM_Dashboard/medical_reports.png" alt="Medical Reports Icon">
+            <p>Medical Reports</p>
+        </div>
+        <div class="dashboard-item" onclick="navigateTo('../HeartBeat_Monitoring/HB_Monitoring.html')">
+            <img src="../HM_Dashboard/heartbeat_monitoring.png" alt="Heartbeat Monitoring Icon">
+            <p>Heartbeat Monitoring</p>
+        </div>
+        <div class="dashboard-item" onclick="navigateTo('../Step_Tracking/step_tracker.html')">
+            <img src="../HM_Dashboard/step_tracking.png" alt="Step Tracking Icon">
+            <p>Step Tracking</p>
+        </div>
+
+    <div id="notification" class="notification">Welcome to the Medical Dashboard!</div>
+
+    <script src="HM_dashboard.js"></script>
+</body>
+</html>

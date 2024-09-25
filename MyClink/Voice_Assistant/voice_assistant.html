@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="voice_assistant.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Voice Assistant</h1>
+            <div id="mic-indicator" class="mic-indicator"></div>
+        </header>
+        <main>
+            <button id="voice-btn" class="voice-button">🎤</button>
+            <div id="output" class="output"></div>
+            <div id="response" class="response"></div>
+        </main>
+        <footer>
+            <button id="settings-btn" class="settings-button">⚙️ Settings</button>
+        </footer>
+    </div>
+    <div id="settings-panel" class="settings-panel hidden">
+        <h2>Settings</h2>
+        <label>
+            <input type="checkbox" id="toggle-speech" checked>
+            Enable speech responses
+        </label>
+        <button id="close-settings" class="close-button">Close</button>
+    </div>
+    <script src="voice_assistant.js"></script>
+</body>
+</html>
